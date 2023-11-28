@@ -6,7 +6,7 @@ using namespace std;
 
 string getPassword(int length){
     string Password = "";
-    string characters = "aquickbrownfoxjumpsoverthelazydogAQUICKBROWNFOXJUMPSOVERTHELAZYDOG0123456789";
+    string characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=~`/?><.,";
     int charSize = characters.size();
     srand(time(0));
     int randomIndex;
@@ -23,7 +23,7 @@ int main(){
     cout<<"Enter the length of the Password :: ";
     cin>>length;
     string password = getPassword(length);
-    cout<<"Genrated Password :: "<<password;
+    cout<<"Randomly Genrated Password :: "<<password;
 
     return 0;
 }
